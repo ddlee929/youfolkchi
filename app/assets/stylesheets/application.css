@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-color: #ffffff; 
+    margin: 0; 
+    padding: 0;
+    background-image: url("images/band.jpg");
+    background-size: cover;
+}
+
+#header {
+  height: 7%;
+  width: 100%;
+  background-color: white;
+    -moz-opacity: 0.80;
+      -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+#header ul {
+  position: relative;
+}
+
+#top-wrapper ul {
+  width: 100%;
+  display: flex;
+  justfiy-content: center;
+  margin-top: -45px;
+  margin-left: 150px;
+  list-style: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+#nav-buttons {
+# width: 100%;
+# display: flex;
+# justfiy-content: center;
+# margin-top: -45px;
+  margin-right: 150px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#top-wrapper li {
+  width: 100px;
+  float: right;
+  margin-left: 1px;
+}
+
+h2 {
+    position: relative;
+    font-family: Book Antiqua;
+}
+
+div, iframe { 
+  margin: 0 auto;
+  display:block;
+}
+
+#footer {
+    width: 900px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    background: #cca300;
+    clear:both;
+}
