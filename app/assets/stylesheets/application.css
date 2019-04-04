@@ -1,24 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
 
 body {
     background-color: #ffffff; 
     margin: 0; 
     padding: 0;
-    background-image: url("images/band.jpg");
+    background: url("images/band.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -31,17 +17,26 @@ header {
     margin-bottom: 100px;
 }
 
-#header ul {
+header ul {
   position: relative;
+}
+
+#top-wrapper {
+  position: fixed;
+  margin-top: -50px;
 }
 
 #top-wrapper ul {
   width: 100%;
   display: flex;
-  justfiy-content: center;
-  margin-top: -45px;
-  margin-left: 150px;
+  justify-content: center;
+  margin-top: -50px;
+  margin-left: 90px;
   list-style: none;
+}
+
+.logo {
+  margin-top: 0px;
 }
 
 .fa-facebook {
@@ -67,20 +62,21 @@ a:link {
   margin-left: 1px;
 }
 
+
 h2 {
     position: relative;
     font-family: Book Antiqua;
 }
 
 iframe { 
-  margin-top: 100px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -89,8 +85,22 @@ footer {
 }
 
 .albums-list {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.albums-list ul {
+  list-style-type: none;
+}
+
+#discog-header {
+  color: white;
+  font-size: 50px;
+}
+
+#other-music-header {
+  color: white;
+  font-size: 50px;
 }
