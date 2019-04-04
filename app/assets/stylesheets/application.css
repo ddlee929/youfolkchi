@@ -22,13 +22,13 @@ body {
     background-size: cover;
 }
 
-#header {
+header {
   height: 7%;
   width: 100%;
-/*background-color: white;*/
     -moz-opacity: 0.80;
       -khtml-opacity: 0.8;
     opacity: 0.8;
+    margin-bottom: 100px;
 }
 
 #header ul {
@@ -49,11 +49,11 @@ body {
     color: white;
 }
 
-#nav-buttons {
-# width: 100%;
-# display: flex;
-# justfiy-content: center;
-# margin-top: -45px;
+nav-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
   margin-right: 150px;
 }
 
@@ -72,9 +72,11 @@ h2 {
     font-family: Book Antiqua;
 }
 
-div, iframe { 
-  margin: 0 auto;
-  display:block;
+iframe { 
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -82,11 +84,13 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  /*background-color: red;*/
   color: white;
   text-align: center;
 }
 
-discog {
-
+.albums-list {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
