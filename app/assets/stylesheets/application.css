@@ -37,8 +37,8 @@ header ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: -45px;
-/*  margin-left: 60px;*/
+  margin-top: -40px;
+  margin-left: -15%;
   list-style: none;
 }
 
@@ -49,16 +49,16 @@ header ul {
 
 .fa-facebook {
     background: #3B5998;
-    color: white;
+    color: blue;
 }
 
-nav-buttons {
+/*nav-buttons {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: -45px;
   margin-right: 150px;
-}
+}*/
 
 a:link {
   text-decoration: none;
@@ -70,7 +70,6 @@ a:link {
   margin-top: -10px;
 /*  margin-left: 1px;*/
 }
-
 
 h2 {
     position: relative;
