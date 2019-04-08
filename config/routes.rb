@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :merches
   resources :contacts
   resources :posts
   get 'pages/home'
