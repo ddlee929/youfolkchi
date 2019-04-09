@@ -53,7 +53,7 @@ header ul {
 
 .social-media {
   display: inline-block;
-  position: fixed;
+  position: absolute;
   top: 0px;
   bottom: 0px;
   width: 25px;
@@ -69,25 +69,19 @@ header ul {
 
 #buttons {
   float: right;
+/*  position: fixed;*/
 }
 
 #social-media {
   padding: 0px;
   line-height: 10%;
+/*  position: absolute;*/
 }
 
 img {
   width: 25px;
   height: 25px;
 }
-
-/*nav-buttons {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: -45px;
-  margin-right: 150px;
-}*/
 
 a:link {
   text-decoration: none;
@@ -140,4 +134,27 @@ footer {
 #other-music-header {
   color: white;
   font-size: 50px;
+}
+
+#video {
+  position: fixed;
+  left: 20%;
+  margin: 0 auto;
+}
+
+#contact-info {
+  height: 25%;
+  width: 30%;
+  font-size: 25px;
+  border: 1px solid green;
+  position: fixed;
+  left: 36%;
+  margin-top: 18%;
+  padding-top: 1.5%;
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: white;
+      -moz-opacity: 0.80;
+      -khtml-opacity: 0.8;
+      opacity: 0.8;
 }
