@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :performances
+  resources :concerts
+  resources :lives
   resources :merches
   resources :contacts
   resources :posts
