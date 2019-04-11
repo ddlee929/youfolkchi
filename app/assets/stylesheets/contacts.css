@@ -6,21 +6,14 @@ body {
     background-size: cover;
 }
 
-header {
-  height: 7%;
+#nav-bar {
   width: 100%;
+  height: 20%;
     -moz-opacity: 0.80;
       -khtml-opacity: 0.8;
     opacity: 0.8;
-/*    margin-bottom: 100px;*/
   margin: 0;
-}
-
-header ul {
-  position: relative;
-}
-
-#top-wrapper {
+  display: flex;
   position: relative;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -28,22 +21,28 @@ header ul {
   padding-left: 0px;
   margin-top: 0px;
   margin-left: 0px;
-  height: 20%;
-  width: 100%;
-      -moz-opacity: 0.80;
-      -khtml-opacity: 0.8;
-    opacity: 0.8;
   background-color: white;
-  border: 1px solid red;
+  border: 2px solid red;
+  flex-direction: row;
 }
 
-#top-wrapper ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: -40px;
-  margin-left: -15%;
-  list-style: none;
+#wrapper {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 60px 100px;
+    flex-wrap: nowrap;
+
+}
+
+#container {
+    border: 1px solid blue;
+    display: flex;
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 60px 100px;*/
+/*    flex-wrap: nowrap;
+    flex-direction: row;*/
 }
 
 .logo {
@@ -51,53 +50,49 @@ header ul {
   margin-left: 30px;
 }
 
-.social-media {
-  display: inline-block;
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  width: 25px;
-  height: 25px;
-/*  border: 1px solid blue;*/
-  padding-top: 13px;
-  margin-right: 0px;
-}
-
 #pages {
-/*  float: left;*/
+  float: left;
+  margin-left: 20%;
+  justify-content: flex-start;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: 20%;
+  min-width: 30%;
+  border: 1px solid black;
+
 }
 
-#buttons {
+.page-links {
+  margin-right: 5%;
+  display: inline;
+  font-size: 17px;
+}
+
+#social-nav-buttons {
   float: right;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: 78%;
+  min-width: 23%;
+  border: 1px solid black;
+
 }
 
-#social-media {
-  padding: 0px;
-  line-height: 10%;
+.social-media {
+    margin-right: 5%;
+    display: inline;
+
+/*  padding: 0px;
+  line-height: 10%;*/
 }
 
 img {
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
 }
-
-/*nav-buttons {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: -45px;
-  margin-right: 150px;
-}*/
 
 a:link {
   text-decoration: none;
-}
-
-#top-wrapper li {
-  width: 100px;
-  float: right;
-  margin-top: -10px;
-/*  margin-left: 1px;*/
 }
 
 h2 {
@@ -139,4 +134,28 @@ footer {
 
 #other-music-header {
   color: white;
-  font-
+  font-size: 50px;
+}
+
+#video {
+  position: fixed;
+  left: 20%;
+  margin: 0 auto;
+}
+
+#contact-info {
+  height: 25%;
+  width: 30%;
+  font-size: 25px;
+  border: 1px solid green;
+  position: fixed;
+  left: 36%;
+  margin-top: 18%;
+  padding-top: 1.5%;
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: white;
+      -moz-opacity: 0.80;
+      -khtml-opacity: 0.8;
+      opacity: 0.8;
+}
