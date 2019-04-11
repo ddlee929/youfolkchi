@@ -89,11 +89,6 @@ a:link {
   text-decoration: none;
 }
 
-h2 {
-    position: relative;
-    font-family: Book Antiqua;
-}
-
 iframe { 
   margin-top: 20px;
   display: flex;
@@ -129,7 +124,9 @@ iframe {
 
 #outer-albums-list {
   width: 100%;
-  height: 550px;
+  height: 580px;
+  background: url("images/thefoil.jpg") no-repeat center center fixed;
+  border: 1px solid black;
 }
 
 #outer-albums-list2 {
@@ -137,17 +134,30 @@ iframe {
   left: 50%;
   float: left;
   position: relative;
+  
 }
 
 #discog-albums-list {
   height: 400px;
   margin: 0px auto;
   width: 350px;
+
 }
 
 #related-albums-list {
-  height: 2000px;
+  height: 1600px;
+  float: right;
+  position: relative;
+  right: 50%; /* or right 50% */
+  text-align: left;
+  border: 1px solid white;
+  background: url("images/blue.jpg") no-repeat center center fixed;
+  margin-top: 20px;
+}
 
+#related-albums-list > .related-albums {
+  position: relative;
+  left: 50%;
 }
 
 #discog-header {
