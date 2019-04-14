@@ -4,12 +4,14 @@
   <head>
     <title>You Folk</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.curator.io/3.1/css/curator.css"/>
     <!-- <link href="../../styles/youfolkstyles.css" rel="stylesheet"> -->
     
   </head>
   
     <body>
     <div id="container">
+
       <div id="nav-bar">
             <div class="logo"><h1>You Folk</h1></div>
 
@@ -28,14 +30,38 @@
               <a class="social-media" href="https://www.youtube.com/channel/UCiQLENUc7xhn13woW_Dodeg?view_as=subscriber"> <img src="/assets/images/youtube.png"></a>
             </div>
       </div>
-    
-    <div id="video">
-    <iframe width="840" height="540" style="position:relative; top: 100px;" src="https://www.youtube.com/embed/aXZ_zAR5mVQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+
+      <div id="second-section">
+        <div class="endearment">
+          <video autoplay muted loop id="myVideo">
+          <source src="/assets/videos/endearment.mp4" type="video/mp4">
+          <button id="myBtn" onclick="myFunction()">Pause</button>
+          </video>
+        </div>
+
+        <div id="live-band">
+          <img id="naperville-pic" src="/assets/images/liveband.jpg" alt="live band shot">
+        </div>
+      </div>
+
+              <!-- Place <div> tag where you want the feed to appear -->
+      <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+      </div>  
 
       <div id="footer">
         Copyright © 2019 You Folk
       </div>
+
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript" src="//cdn.curator.io/3.1/js/curator.js"></script>
+<script type="text/javascript">
+    // Change FEED_ID to your unique FEED_ID
+    var widget = new Curator.Widgets.Waterfall({
+        debug:true, // While you're testing
+        container:'#curator-feed',
+        feedId:'135d9a27-d6ca-4cd5-b830-76c86d0dd626'
+    });
+</script>
   </body>
   </div>
 </html>
