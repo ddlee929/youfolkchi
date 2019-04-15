@@ -11,17 +11,21 @@ body {
     background-size: cover;
 }
 
+#music-body {
+    background-color: #ffffff; 
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    background: none;
+    background-size: cover;
+}
+
 #nav-bar {
   width: 100%;
-  height: 10%;
-  min-height: 50px;
-  max-height: 65px;
-    -moz-opacity: 0.80;
-      -khtml-opacity: 0.8;
-    opacity: 0.8;
+  height: 65px;
   margin: 0;
-  display: flex;
-  position: relative;
+  position: fixed;
+  top: 0;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-right: 0px;
@@ -30,7 +34,15 @@ body {
   margin-left: 0px;
   background-color: white;
   border: 2px solid red;
-  flex-direction: row;
+  z-index: 10;
+/*  flex-direction: row;*/
+  
+}
+
+#nav-bar-container {
+  position: relative;
+  width: 100%;
+  height: 65px;
 }
 
 #container {
@@ -38,6 +50,8 @@ body {
 /*    display: flex;*/
     height: 95%;
     min-height: 95%;
+    position: relative;
+    margin-top: 65px;
 }
 
 .logo {
@@ -49,9 +63,10 @@ body {
   float: left;
   margin-left: 20%;
   position: absolute;
-  margin-top: 1.5%;
+  margin-top: 10px;
   margin-left: 20%;
   min-width: 30%;
+  top: 0;
 /*  border: 1px solid black;*/
 }
 
@@ -68,9 +83,11 @@ a {
 #social-nav-buttons {
   float: right;
   position: absolute;
-  margin-top: 1.5%;
+  margin-top: 10px;
   margin-left: 78%;
   min-width: 23%;
+  top: 0;
+
 /*  border: 1px solid black;*/
 
 }
@@ -125,8 +142,17 @@ iframe {
 #outer-albums-list {
   width: 100%;
   height: 580px;
-  background: url("images/thefoil.jpg") no-repeat center center fixed;
   border: 1px solid black;
+  position: relative;
+}
+
+#outer-albums-list img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
 }
 
 #outer-albums-list2 {
@@ -275,11 +301,12 @@ iframe {
 
 #curator-feed {
   position: absolute;
-  height: 100%;
+/*  height: 100%;*/
   width: 100%;
   margin: auto;
   border: 1px solid green;
   background-color: black
+  
 }
 
 #footer {
