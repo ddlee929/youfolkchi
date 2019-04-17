@@ -1,11 +1,15 @@
 <! DOCTYPE html>
 <html>
-  <div id="wrapper">
   <head>
     <title>You Folk</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.curator.io/3.1/css/curator.css"/>
-    <!-- <link href="../../styles/youfolkstyles.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+
     <script type="text/javascript">
 (function(){
 var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
@@ -13,18 +17,22 @@ i.src = "https://cdn.curator.io/published/135d9a27-d6ca-4cd5-b830-76c86d0dd626.j
 e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 })();
 </script>
+
+
   </head>
   
     <body>
       <div id="nav-bar">
         <div id="nav-bar-container">
-          <div class="logo"><h1>You Folk</h1></div>
           <div id="pages">
-            <div class="page-links"><a href="C:/Users/dlee231/Documents/Projects/youfolkshows.html"> <id="shows">Shows</a></div>
-            <div class="page-links"><a href="C:\Users\dlee231\Documents\Projects\youfolkcontact.html"> <id="contact">Contact</a></div>
-            <div class="page-links"><a href="C:\Users\dlee231\Documents\Projects\youfolkmerch.html"> <id="merch">Merch</a></div>
-            <div class="page-links"><a href="C:\Users\dlee231\Documents\Projects\youfolkothermusic.html"> <id="other-music">Music</a></div>
+            <div class="page-links"><a href="/pages/home"> <id="shows">Home</a></div>
+            <div class="page-links"><a href="/pages/performance"> <id="shows">Shows</a></div>
+            <div class="page-links"><a href="/pages/music"> <id="other-music">Music</a></div>
+            <div class="page-links"><a href="/pages/contact"> <id="contact">Contact</a></div>
           </div>
+
+          <div class="logo">You Folk</div>
+
           <div id="social-nav-buttons">
             <a class="social-media" href="https://www.instagram.com/you.folk/"> <img src="/assets/images/instagram.png"></a>
             <a class="social-media" href="https://www.facebook.com/youfolkchicago/"> <img src="/assets/images/facebook-logo.png"></a>
@@ -45,19 +53,32 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
           </video>
         </div>
 
-        <div id="live-band">
+        <div class="slideshow">
+          <div><img id="naperville-pic" src="/assets/images/liveband.jpg" alt="live band shot"></div>
+          <div><img id="naperville-pic" src="/assets/images/melive.jpg" alt="live band shot"></div>
+          <div></div>
+        </div>
+
+        $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 8
+        });
+
+<!--         <div id="live-band">
           <img id="naperville-pic" src="/assets/images/liveband.jpg" alt="live band shot">
         </div>
-      </div>
-
-              Place <div> tag where you want the feed to appear
+      </div> -->
       
       <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
       </div>  
-
+      
+      </div>
       <div id="footer">
         Copyright © 2019 You Folk
       </div>
+
+      <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+
   </body>
-  </div>
 </html>
