@@ -116,8 +116,20 @@ a:hover {
 }
 
 img {
+/*  width: 18px;
+  height: 18px;*/
+  width: auto;
+  height: auto;
+}
+
+.sm-buttons {
   width: 18px;
   height: 18px;
+}
+
+.live-shots {
+  width: auto;
+  height: auto;
 }
 
 a:link {
