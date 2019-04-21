@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :albums
   resources :gigs
   devise_for :users
   resources :performances
