@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
     <script type="text/javascript">
 (function(){
@@ -53,17 +56,23 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
           </video>
         </div>
 
-        <div class="caoursel-container">
+      <div id="third-section">
+        <div class="carousel-container">
+          <i class="fas fa-arrow-circle-left" id="prevBtn"></i>
+          <i class="fas fa-arrow-circle-right" id="nextBtn"></i>
           <div class="carousel-slide">
-            <img class="live-shots" src="/assets/images/liveband.jpg" alt="band together">
-            <img src="/assets/images/melive.jpg" alt="me">
-            <img src="/assets/images/rebeccalive.jpg" alt="rebecca">
-            <img src="/assets/images/bryanlive.jpg" alt="bryan">
-            <img src="/assets/images/evanlive.jpg" alt="evan">
+            <img class="shots" src="/assets/images/evan.jpg" id="evanClone" alt="evan">
+            <img class="shots" src="/assets/images/liveband.jpg" alt="band together">
+            <img class="shots" src="/assets/images/liveband2.jpg" alt="band together 2">
+            <img class="shots" src="/assets/images/double.jpg" alt="double">
+            <img class="shots" src="/assets/images/me.jpg" alt="me">
+            <img class="shots" src="/assets/images/rebecca.jpg" alt="rebecca">
+            <img class="shots" src="/assets/images/bryan.jpg" alt="bryan">
+            <img class="shots" src="/assets/images/evan.jpg" alt="evan">
+            <img class="shots" src="/assets/images/liveband.jpg" id="groupClone" alt="band together">
           </div>
         </div>
-
-
+      </div>
 
 <!--         <div id="live-band">
           <img id="naperville-pic" src="/assets/images/liveband.jpg" alt="live band shot">
@@ -78,6 +87,6 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
         Copyright © 2019 You Folk
       </div>
 
-      <script src="app.js"></script>
+      <script src="/assets/app.js"></script>
   </body>
 </html>
