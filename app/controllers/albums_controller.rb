@@ -3,6 +3,10 @@ class AlbumsController < ApplicationController
   def index
   end
 
+  def list
+    @albums = Album.all
+  end
+
   def new
     @album = Album.new
   end
@@ -26,6 +30,12 @@ class AlbumsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @album = Album.find(params[:id])
+    @album.destroy
+    redirect_to albums_path
   end
 
   def show

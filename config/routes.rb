@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   get 'albums/create'
 
-
-
-  resources :albums
+  resources :albums do 
+    collection do 
+      get :list
+    end
+  end
   resources :gigs do 
     collection do 
       get :list

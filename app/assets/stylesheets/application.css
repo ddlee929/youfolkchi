@@ -468,6 +468,12 @@ iframe {
   border: 1px solid white;
 }
 
+#create-albums {
+  margin: auto;
+  width: 500px;
+  border: 1px solid white;
+}
+
 #footer {
   margin: 0px;
   padding-top: 20px;
