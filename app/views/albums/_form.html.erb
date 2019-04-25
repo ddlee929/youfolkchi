@@ -1,0 +1,22 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>Add Albums</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  </head>
+
+  <body>
+
+<%= form_for @album do |f| %>
+
+  <%= f.text_area :url %>
+  <%= f.text_area :image %>
+  <%= f.text_area :name %>
+  
+  <%= f.submit 'Save' %>
+
+<% end %>
+
+  </body>
+</html>

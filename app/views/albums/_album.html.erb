@@ -1,0 +1,20 @@
+<tr>
+  <td>
+    <%= album.id %>
+  </td>
+  <td>
+    <%= album.date %>
+  </td>
+  <td>
+    <%= truncate(album.url) %>
+  </td>
+  <td>
+    <%= truncate(album.image) %>
+  </td>
+  <td>
+    <%= truncate(album.name) %>
+  </td>
+  <td>
+    <%= link_to 'Edit', edit_album_path(album), id: "edit_#{album.id}" %>
+  </td>
+</tr>

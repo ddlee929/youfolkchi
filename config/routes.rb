@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
+  get 'albums/new'
+
+  get 'albums/create'
+
+
+
   resources :albums
-  resources :gigs
+  resources :gigs do 
+    collection do 
+      get :list
+    end
+  end
   devise_for :users
   resources :performances
   resources :lives

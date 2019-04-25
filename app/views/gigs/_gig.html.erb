@@ -1,0 +1,17 @@
+<tr>
+  <td>
+    <%= gig.id %>
+  </td>
+  <td>
+    <%= gig.date %>
+  </td>
+  <td>
+    <%= truncate(gig.location) %>
+  </td>
+  <td>
+    <%= truncate(gig.artists) %>
+  </td>
+  <td>
+    <%= link_to 'Edit', edit_gig_path(gig), id: "edit_#{gig.id}" %>
+  </td>
+</tr>

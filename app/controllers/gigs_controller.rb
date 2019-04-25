@@ -1,7 +1,11 @@
 class GigsController < ApplicationController
-  before_action :set_gig, only: [:show]
+  before_action :set_gig, only: [:show, :edit]
   def index
     @last_gig_id = Gig.all.sort_by{|g| g.date}.last(1)[0].id
+  end
+
+  def list
+    @gigs = Gig.all
   end
 
   def new
@@ -16,6 +20,23 @@ class GigsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
+  end
+
+  def update
+    if @gig.update(gig_params)
+      redirect_to @gig, notice: 'Your show was created successfully'
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @gig = Gig.find(params[:id])
+    @gig.destroy
+    redirect_to gigs_path
   end
 
   def show
