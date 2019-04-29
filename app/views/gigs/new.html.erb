@@ -1,3 +1,11 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+</head>
+
+<div id="new-heading-gigs">Create New Shows</div>
+
+<div id="create-gigs">
 <%= form_for @gig do |f| %>
 
   <%= f.date_field :date %>
@@ -7,3 +15,4 @@
   <%= f.submit 'Save' %>
 
 <% end %>
+</div>

@@ -6,11 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   </head>
 
+<div id="new-heading-albums">Create New Shows</div>
+
   <body>
 <div id="create-albums">
 <%= form_for @album do |f| %>
 
-  <%= f.text_area :url %>
+  <%= f.text_area :url, cols:"30", rows: "10" %>
   <%= f.text_area :image %>
   <%= f.text_area :name %>
 
