@@ -1,5 +1,7 @@
 class AlbumsController < ApplicationController
   before_action :set_album, only: [:show, :edit]
+  before_action :authenticate_user!, :except => [:list,:index]
+
   def index
   end
 

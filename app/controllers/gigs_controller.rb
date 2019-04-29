@@ -1,5 +1,7 @@
 class GigsController < ApplicationController
   before_action :set_gig, only: [:show, :edit]
+  before_action :authenticate_user!, :except => [:list,:index]
+
   def index
     @last_gig_id = Gig.all.sort_by{|g| g.date}.last(1)[0].id
   end
