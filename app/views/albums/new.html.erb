@@ -1,25 +1,31 @@
 <! DOCTYPE html>
-<html>
   <head>
     <title>Add Albums</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   </head>
 
-<div id="new-heading-albums">Create New Shows</div>
+<div id="new-heading-albums">Create New Albums</div>
 
-  <body>
 <div id="create-albums">
-<%= form_for @album do |f| %>
+  <table id="albums-table">
+  <%= form_for @album do |f| %>
 
-  <%= f.text_area :url, cols:"30", rows: "10" %>
-  <%= f.text_area :image %>
-  <%= f.text_area :name %>
-
-  <%= f.submit 'Save' %>
-
-<% end %>
+  <tr>
+    <td class="album-table-headers">URL:</td>
+    <td><%= f.text_area :url %></td>
+  </tr>
+  <tr>
+    <td class="album-table-headers">Image:</td>
+    <td><%= f.text_area :image %></td>
+  </tr>
+  <tr>
+    <td class="album-table-headers">Name:</td>
+    <td><%= f.text_area :name %></td>
+  </tr>
+  <tr>
+    <td><%= f.submit 'Save', id: 'save-button' %></td>
+    <td></td>
+  </tr>
+  <% end %>
 </div>
-
-  </body>
-</html>
