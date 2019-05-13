@@ -28,8 +28,9 @@ class GigsController < ApplicationController
   end
 
   def update
+    @gig = Gig.find(params[:id])
     if @gig.update(gig_params)
-      redirect_to @gig, notice: 'Your show was created successfully'
+      redirect_to @gig, notice: 'Your show was updated successfully'
     else
       render :edit
     end

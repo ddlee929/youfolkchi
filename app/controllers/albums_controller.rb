@@ -27,6 +27,7 @@ class AlbumsController < ApplicationController
   end
 
   def update
+    @album = Album.find(params[:id])
     if @album.update(album_params)
       redirect_to @album, notice: 'Your album was created successfully'
     else

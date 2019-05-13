@@ -1,6 +1,8 @@
 <ul>
 <% @gigs.each do | gig | %>
 <li>
+  <%= gig.date %>
+  <%= gig.location %>
   <%= link_to gig.artists, gig_path(gig) %>
   <%= button_to 'edit', edit_gig_path(gig), method: 'get' %>
   <%= button_to 'remove', gig_path(gig), method: 'delete', data: { confirm: 'are you sure?'} %>

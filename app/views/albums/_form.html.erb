@@ -1,11 +1,22 @@
 <div id="create-albums">
-<%= form_for @album do |f| %>
+  <table id="albums-table">
+  <%= form_for @album do |f| %>
 
-  <%= f.text_area :url %>
-  <%= f.text_area :image %>
-  <%= f.text_area :name %>
-  
-  <%= f.submit 'Save' %>
-
-<% end %>
+  <tr>
+    <td class="album-table-headers">URL:</td>
+    <td><%= f.text_area :url %></td>
+  </tr>
+  <tr>
+    <td class="album-table-headers">Image:</td>
+    <td><%= f.text_area :image %></td>
+  </tr>
+  <tr>
+    <td class="album-table-headers">Name:</td>
+    <td><%= f.text_area :name %></td>
+  </tr>
+  <tr>
+    <td><%= f.submit 'Save', id: 'save-button' %></td>
+    <td></td>
+  </tr>
+  <% end %>
 </div>

@@ -1,6 +1,8 @@
 <ul>
 <% @albums.each do | album | %>
 <li>
+  <%= album.name %>
+  <%= album.url %>
   <%= link_to album.image, album_path(album) %>
   <%= button_to 'edit', edit_album_path(album), method: 'get' %>
   <%= button_to 'remove', album_path(album), method: 'delete', data: { confirm: 'are you sure?'} %>
