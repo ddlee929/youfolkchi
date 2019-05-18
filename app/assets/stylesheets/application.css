@@ -48,6 +48,18 @@ body {
   text-align: center;
 }
 
+#nav-bar-container select {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .page-links { 
+    display: none; }
+
+  #nav-bar-container select { 
+    display: inline-block; }
+}
+
 textarea {
   font-size: 16px;
 }
@@ -108,10 +120,17 @@ a:hover {
 .page-links {
   float: left;
   margin-right: 20px;
-  display: inline;
+/*  display: inline;*/
   font-size: 20px;
 /*  border: 1px solid purple;*/
 }
+
+@media (min-width: 501px) {
+  .page-links {
+  display: inline;
+  }
+}
+
 
 #social-nav-buttons {
   position: relative;
@@ -285,9 +304,9 @@ iframe {
 
 #contact-info {
   height: auto;
-  width: 30%;
+  width: 35%;
   min-width: 200px;
-  font-size: 25px;
+  font-size: 22px;
 /*  border: 1px solid green;*/
   position: relative;
   margin-left: auto;
@@ -305,6 +324,20 @@ iframe {
       opacity: .9;
 }
 
+@media (max-width: 700px) {
+
+  #contact-info {
+    width: 40%;
+  }
+}
+
+@media (max-width: 655px) {
+
+  #contact-info {
+    font-size: 16px;
+  }
+}
+
 #contact-info-header {
   padding-top: 40px;
   color: white;
@@ -318,6 +351,11 @@ iframe {
   animation: 
     typing 5s steps(30, end),
     blinking-cursor .5s step-end infinite;
+}
+
+@media (max-width: 500px) {
+  #contact-info-header { 
+    font-size: 40px; }
 }
 
 #shows-header {

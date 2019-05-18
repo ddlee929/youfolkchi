@@ -4,8 +4,6 @@
     <title>YouFolkWebsite</title>
     <%= csrf_meta_tags %>
 
-    <link rel="stylesheet" href="../../styles/youfolkstyles.css">
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -20,6 +18,13 @@
             <div class="page-links"><a href="/albums"> <id="other-music">Music</a></div>
             <div class="page-links"><a href="/pages/contact"> <id="contact">Contact</a></div>
           </div>
+
+          <select>
+            <option value="/pages/home">Home</option>
+            <option value="/gigs">Shows</option>
+            <option value="/albums">Music</option>
+            <option value="/pages/contact">Contact</option>
+          </select>
 
           <div class="logo">You Folk</div>
 
