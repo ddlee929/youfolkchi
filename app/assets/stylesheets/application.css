@@ -1,5 +1,4 @@
 html {
-
 }
 
 body {
@@ -133,10 +132,11 @@ textarea {
 }
 
 #container {
+  display: block;
   margin-top: 65px;
-  height: auto;
+/*  height: auto;*/
+  min-height: calc(100vh - 125px);
   width: 100%;
-/*  min-height: 100%;*/
 }
 
 .logo {
@@ -460,13 +460,6 @@ iframe {
 /*  border: 1px solid white;*/
 }
 
-/*@media (max-width: 500px) {
-  .carousel-container {
-    width: 100%;
-    height: auto;
-  }
-}*/
-
 .carousel-slide {
   position: relative;
   width: 100%;
@@ -474,35 +467,16 @@ iframe {
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-/*  margin-bottom: 100px;*/
-/*  scroll-snap-type: x mandatory;  */
   scroll-behavior: smooth;
-
-  /*  height: 887px;*/
-  /*  width: 1331px;*/
 }
-
-/*.shots > div {
-  scroll-snap-align: start;
-}*/
-
-/*
-.slide-wrap {
-  width: 1331px;
-  text-align: center;
-  overflow: hidden;
-}*/
 
 .slides {
   background-size: cover;
   position: relative;
   margin: 0;
   padding: 0;
-/*  border: 1px solid pink;*/
-/*  width: 1331px;*/
   width: 100%;
   height: 887px;
-/*  height: auto;*/
   flex-shrink: 0;
 }
 
@@ -593,7 +567,6 @@ iframe {
   height: 150px;
   background-color: white;
   opacity: 0.8;
-/*  border: 1px solid white;*/
 }
 
 .gig-table-headers {
@@ -603,29 +576,117 @@ iframe {
 }
 
 #gig-date {
-/*  height: 100px;*/
 }
 
 #gigs-list {
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   height: auto;
   width: 600px;
   padding: 8px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 20px;
   text-align: center;
+  list-style-type: none;
 }
 
 #gigs-list li {
   margin: 30px;
 }
 
+.back-to-admin {
+  background-color: white;
+  color: white;
+  width: 150px;
+  opacity: 0.9;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#albums-holder {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 85%;
+}
+
+#albums-table {
+  margin: auto;
+  width: 100%;
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+}
+
+#albums-last-column {
+  border-bottom: 0px;
+
+}
+
+#admin-panel {
+  position: relative;
+  background-color: white;
+  opacity: 0.8;
+  width: 70%;
+  margin-left: 50px;
+  margin: auto;
+  margin-top: 50px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+#panel-options {
+  margin: auto;
+  font-size: 24px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.albums-row {
+  padding-bottom: 25px;
+}
+
+.albums-column {
+  font-size: 16px;
+  border-bottom: 1px solid grey;
+  padding-top: 15px;
+  padding-bottom:20px;
+  text-align: left;
+
+}
+
+#album-headers {
+  text-align: left;
+  padding-left: 45px;
+  border-bottom: 1px solid grey;
+}
+
+#albums-table {
+  opacity: 0.9;
+}
+
+#album-artwork-header {
+  padding-left: 50px;
+}
+
+.albums-name{
+  width: 30%;
+}
+
+.albums-url {
+  width: 40%;
+}
+
+.albums-image {
+  width: 30%;
+
+}
+
 #albums-list {
   background-color: white;
   opacity: 0.8;
   height: auto;
-  width: 700px;
+/*  width: 700px;*/
   padding: 8px;
   margin: auto;
   margin-top: 100px;
@@ -638,12 +699,6 @@ iframe {
 }
 
 #create-albums {
-/*  margin: auto;
-  padding-top: 150px;
-  width: 500px;
-  height: 200px;
-  background-color: black;
-  opacity: 0.8;*/
   padding: 20px;
   padding-bottom: 35px;
   height: auto;
@@ -708,7 +763,6 @@ iframe {
   text-align: center;
   background-color: white;
   opacity: 0.8;
-/*  border: 1px solid yellow;*/
 }
 
 .typewriter {
@@ -717,12 +771,12 @@ iframe {
 
 .typewriter h1 {
   color: white;
-  font-family: monospace; /* Web-safe typewriter-like font */
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  font-family: monospace; 
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
   animation: 
     typing 3.5s steps(30, end),
     blinking-cursor .5s step-end infinite;
