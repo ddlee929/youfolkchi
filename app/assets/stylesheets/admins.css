@@ -1,0 +1,26 @@
+#admin-panel {
+  position: relative;
+  background-color: white;
+  opacity: 0.8;
+  width: 70%;
+  height: 100%;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  #admin-panel { 
+    font-size: 12px; }
+
+}
+
+#panel-options {
+  margin: auto;
+  font-size: 24px;
+  list-style-type: none;
+  text-align: center;
+}

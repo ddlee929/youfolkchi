@@ -1,3 +1,190 @@
 // Place all the styles related to the Gigs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#gig-holder {
+  margin: auto;
+  width: 80%;
+
+}
+
+#create-gigs {
+  margin: auto;
+}
+
+#shows-table {
+  margin: auto;
+  width: 100%;
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+}
+
+#save-button {
+  width: 60px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  #save-button {
+      width: 60px;
+      height: 30px;
+      border: 1px black solid;
+      background-color: white;
+      opacity: 0.8;
+  }
+}
+
+#gig-date-field {
+  font-size: 16px;
+}
+
+#shows-last-column {
+  border-bottom: 0px;
+}
+
+.shows-column {
+  font-size: 24px;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+  .shows-column {
+    font-size: 16px;
+  }
+}
+
+.shows-date {
+  width: 30%;
+}
+
+.shows-location {
+  width: 30%;
+}
+
+.shows-artists {
+  width: 40%;
+}
+
+#naperville-pic {
+  display: block;
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+#create-gigs {
+  padding: 20px;
+  padding-bottom: 35px;
+  height: auto;
+  margin: auto;
+  width: 500px;
+  height: 150px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 400px) {
+  #create-gigs { 
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.gig-table-headers {
+  font-size: 20px;
+  text-align: right;
+  padding-right: 25px;
+}
+
+#gig-date {
+}
+
+#gigs-list {
+  background-color: white;
+  opacity: 0.9;
+  height: auto;
+  width: 600px;
+  padding: 8px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 400px) {
+  #gigs-list { 
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#gigs-list li {
+  margin: 30px;
+}
+
+.back-to-admin {
+  background-color: white;
+  color: white;
+  width: 150px;
+  opacity: 0.9;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#albums-holder {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 85%;
+}
+
+#albums-table {
+  margin: auto;
+  width: 100%;
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+}
+
+#shows-header {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .06em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+@media only screen and (max-width: 500px) {
+  #shows-header {
+    font-size: 40px;
+  }
+}
+
+.typewriter {
+  position: relative;
+}
+
+.typewriter h1 {
+  color: white;
+  font-family: monospace; 
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+}

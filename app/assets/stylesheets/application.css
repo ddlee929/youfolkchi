@@ -11,14 +11,18 @@ body {
     font-family: 'Crimson Text', serif;
 }
 
-#music-body {
+@media only screen and (max-width: 601px) {
+  body {
     background-color: #ffffff; 
-    height: 100%;
+    width: 100%;
     margin: 0; 
     padding: 0;
-    background: none;
+    background: url("images/band2.jpg") no-repeat center center fixed;
     background-size: cover;
+    font-family: 'Crimson Text', serif;
+  }
 }
+
 
 #nav-bar {
   width: 100%;
@@ -47,7 +51,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 909px) {
+@media only screen and (max-width: 909px) {
   .page-links { 
     display: none; }
 
@@ -98,7 +102,7 @@ textarea {
 
 .dropbtn {
   background-color: black;
-  background: url("images/threelines.png") no-repeat center center fixed;
+  background: url("images/threelines2.png") no-repeat center center fixed;
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -107,7 +111,7 @@ textarea {
 
 }
 
-@media (max-width: 909px) {
+@media only screen and (max-width: 909px) {
   .dropbtn {
     position: fixed;
     display: inline;
@@ -122,19 +126,9 @@ textarea {
   width: 18px;
 }
 
-#gig-date-field {
-  font-size: 16px;
-}
-
-#save-button {
-  width: 60px;
-  height: 30px;
-}
-
 #container {
   display: block;
   margin-top: 65px;
-/*  height: auto;*/
   min-height: calc(100vh - 125px);
   width: 100%;
 }
@@ -144,13 +138,11 @@ textarea {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-/*  position: relative;*/
   margin: 0 auto;
   margin-top: 8px;
   color: black;
   display: inline-block;
   padding-right: 50px;
-/*  border: 1px solid pink;*/
 }
 
 #pages {
@@ -163,7 +155,6 @@ textarea {
   top: 0;
   color: black;
   float: left;
-/*  border: 1px solid black;*/
   display: inline-block;
 }
 
@@ -178,9 +169,7 @@ a:hover {
 .page-links {
   float: left;
   margin-right: 20px;
-/*  display: inline;*/
   font-size: 20px;
-/*  border: 1px solid purple;*/
 }
 
 
@@ -190,12 +179,11 @@ a:hover {
   width: 200px;
   margin-right: 50px;
   top: 0;
-/*  border: 1px solid red;*/
   display: block;
   float: right;
 }
 
-@media (max-width: 909px) {
+@media only screen and (max-width: 909px) {
   #social-nav-buttons {
     display: none;
   }
@@ -207,8 +195,6 @@ a:hover {
 }
 
 img {
-/*  width: 18px;
-  height: 18px;*/
   width: auto;
   height: auto;
 }
@@ -227,237 +213,35 @@ a:link {
   text-decoration: none;
 }
 
-iframe {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.albums-list {
-  margin: 0;
-  height: auto;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-
-.albums-list ul {
-  list-style-type: none;
-}
-
-.albums-list ul li {
-  list-style-type: none;
-  position: relative;
-  display: inline-block;
-}
-
-.albums-list ul li iframe {
-  border: 0;
-  width: 350px;
-  height: 470px;
-  padding-right: 30px;
-}
-
-#outer-albums-list {
-  width: 100%;
-  height: 70%;
-  position: relative;
-  padding-bottom: 200px;
-}
-
-#outer-albums-list img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0.5;
-}
-
-#outer-albums-list2 {
-  height: auto;
-  position: relative;
-  margin: auto;
-}
-
-#discog-albums-list {
-  height: auto;
-}
-
-#related-albums-list {
-  background: url("images/blue.jpg") no-repeat center center fixed;
-  margin-top: 20px;
-  padding-bottom: 100px;
-  height: auto;
-}
-
-.related-albums ul li {
-  margin: auto;
-}
-
-#create-albums {
-  margin: auto;
-}
-
-#discog-header {
-  padding-top: 25px;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  width: auto;
-
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .06em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(30, end),
-    blinking-cursor .5s step-end infinite;
-}
-
-#heading1 {
-  width: 400px;
-  margin: 0px auto;
-  border: 1px solid purple;
-}
-
-#heading2 {
-  border: 1px solid white;
-  width: 400px;
-  margin: 0px auto;
-}
-
-#other-music-header {
-  padding-top: 25px;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .06em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(30, end),
-    blinking-cursor .5s step-end infinite;
-}
-
 #second-section {
   position: relative;
   height: auto;
   width: 100%;
-  min-width: 500px;
+/*  min-width: 500px;*/
 }
 
 .endearment {
-/*  height: auto;*/
   height: auto;
   width: 100%;
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
-/*  padding: 0;*/
-/*  padding-bottom: 10%;*/
-}
-
-#contact-info {
-  height: auto;
-  width: 35%;
-  min-width: 200px;
-  font-size: 22px;
-/*  border: 1px solid green;*/
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-top: 2%;
-  padding-top: 1%;
-  padding-bottom: 3%;
-  text-align: center;
-  background-color: white;
-      -moz-opacity: 0.80;
-      -khtml-opacity: 0.8;
-      opacity: .9;
-}
-
-@media (max-width: 700px) {
-
-  #contact-info {
-    width: 40%;
-  }
-}
-
-@media (max-width: 655px) {
-
-  #contact-info {
-    font-size: 16px;
-  }
-}
-
-#contact-info-header {
-  padding-top: 40px;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-
-  overflow: hidden; /* Ensures the content is not revealed until the animation 
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .06em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(30, end),
-    blinking-cursor .5s step-end infinite;
-}
-
-@media (max-width: 500px) {
-  #contact-info-header { 
-    font-size: 40px; }
-}
-
-#shows-header {
-  padding-top: 5px;
-  padding-bottom: 20px;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .06em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(30, end),
-    blinking-cursor .5s step-end infinite;
-}
-
-@media (max-width: 500px) {
-  #shows-header {
-    font-size: 40px;
-  }
 }
 
 #third-section {
   position: relative;
   height: auto;
-/*  height: 887px;*/
   width: 100%;
   background-color: black;
-/*  border: 3px solid green;*/
 }
 
 .carousel-container {
   position: relative;
-/*  width: 1331px;*/
   width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden;
   object-fit: cover;
-/*  border: 1px solid white;*/
 }
 
 .carousel-slide {
@@ -502,235 +286,8 @@ iframe {
   color: black;
 }
 
-#gig-holder {
-  margin: auto;
-  width: 80%;
 
-}
 
-#shows-table {
-  margin: auto;
-  width: 100%;
-  color: black;
-  background-color: white;
-  opacity: 0.8;
-}
-
-.shows-row {
-
-}
-
-#shows-last-column {
-  border-bottom: 0px;
-}
-
-.shows-column {
-  font-size: 24px;
-  border-bottom: 1px solid grey;
-  padding: 15px;
-}
-
-@media (max-width: 500px) {
-  .shows-column {
-    font-size: 16px;
-  }
-}
-
-.shows-date {
-  width: 30%;
-}
-
-.shows-location {
-  width: 30%;
-}
-
-.shows-artists {
-  width: 40%;
-}
-
-#naperville-pic {
-  display: block;
-  height: 95%;
-  width: 95%;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-}
-
-#create-gigs {
-  padding: 20px;
-  padding-bottom: 35px;
-  height: auto;
-  margin: auto;
-  width: 500px;
-  height: 150px;
-  background-color: white;
-  opacity: 0.8;
-}
-
-.gig-table-headers {
-  font-size: 20px;
-  text-align: right;
-  padding-right: 25px;
-}
-
-#gig-date {
-}
-
-#gigs-list {
-  background-color: white;
-  opacity: 0.9;
-  height: auto;
-  width: 600px;
-  padding: 8px;
-  margin: auto;
-  margin-top: 20px;
-  text-align: center;
-  list-style-type: none;
-}
-
-#gigs-list li {
-  margin: 30px;
-}
-
-.back-to-admin {
-  background-color: white;
-  color: white;
-  width: 150px;
-  opacity: 0.9;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-#albums-holder {
-  margin: auto;
-  margin-bottom: 50px;
-  width: 85%;
-}
-
-#albums-table {
-  margin: auto;
-  width: 100%;
-  color: black;
-  background-color: white;
-  opacity: 0.8;
-}
-
-#albums-last-column {
-  border-bottom: 0px;
-
-}
-
-#admin-panel {
-  position: relative;
-  background-color: white;
-  opacity: 0.8;
-  width: 70%;
-  margin-left: 50px;
-  margin: auto;
-  margin-top: 50px;
-  display: inline-block;
-  text-align: center;
-
-}
-
-#panel-options {
-  margin: auto;
-  font-size: 24px;
-  list-style-type: none;
-  text-align: center;
-}
-
-.albums-row {
-  padding-bottom: 25px;
-}
-
-.albums-column {
-  font-size: 16px;
-  border-bottom: 1px solid grey;
-  padding-top: 15px;
-  padding-bottom:20px;
-  text-align: left;
-
-}
-
-#album-headers {
-  text-align: left;
-  padding-left: 45px;
-  border-bottom: 1px solid grey;
-}
-
-#albums-table {
-  opacity: 0.9;
-}
-
-#album-artwork-header {
-  padding-left: 50px;
-}
-
-.albums-name{
-  width: 30%;
-}
-
-.albums-url {
-  width: 40%;
-}
-
-.albums-image {
-  width: 30%;
-
-}
-
-#albums-list {
-  background-color: white;
-  opacity: 0.8;
-  height: auto;
-/*  width: 700px;*/
-  padding: 8px;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-#albums-list li {
-  margin: 15px;
-}
-
-#create-albums {
-  padding: 20px;
-  padding-bottom: 35px;
-  height: auto;
-  margin: auto;
-  width: 500px;
-  height: 170px;
-  background-color: white;
-  opacity: 0.8;
-  border: 1px solid white;
-}
-
-.album-table-headers {
-  font-size: 20px;
-  text-align: right;
-  padding-right: 25px;
-}
-
-#new-heading-albums {
-  margin: auto;
-  color: white;
-  font-size: 46px;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-#edit-heading-albums {
-  margin: auto;
-  color: white;
-  font-size: 46px;
-  text-align: center;
-  padding-bottom: 30px;
-}
 
 #new-heading-gigs {
   margin: auto;
@@ -748,9 +305,7 @@ iframe {
   padding-bottom: 30px;
 }
 
-#save-button-albums {
-  margin: auto;
-}
+
 
 #footer {
   margin: 0px;
