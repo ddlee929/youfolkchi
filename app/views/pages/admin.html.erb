@@ -1,31 +1,38 @@
-<head>
-  <%= stylesheet_link_tag    'admins' %>
-</head>
+<! DOCTYPE html>
+<html>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <head>
+    <%= stylesheet_link_tag    'admins' %>
+  </head>
 
-<div id="admin-panel">
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-    <h1>Welcome to the Administration Panel!</h1>
-    <ul id="panel-options">
-      <li>
-        <%= link_to "Shows List", list_gigs_path %>
-      </li>
-      <li>
-      <%= link_to "Albums List", list_albums_path %>
-      </li>
-    </ul>
-    <br>
+    <div id="admin-panel-header">Welcome to the Administration Panel!</div>
+    
+    <div id="admin-panel">
+          <ul id="panel-options">
+            <li>
+              <%= link_to "Shows List", list_gigs_path %>
+            </li>
+            <li>
+            <%= link_to "Albums List", list_albums_path %>
+            </li>
+          </ul>
+          <br>
 
-  <% if current_user %>
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Register", new_user_registration_path %>
-    <%= link_to "Login", new_user_session_path %>
-  <% end %>
+        <% if current_user %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Register", new_user_registration_path %>
+          <%= link_to "Login", new_user_session_path %>
+        <% end %>
 
-  <% if current_user %>
-</div>
+        <% if current_user %>
 
-<% end %>
+        <% end %>
+    </div>
+  </body>
+
+</html>

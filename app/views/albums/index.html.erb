@@ -10,12 +10,12 @@
   <body id="music-body">
 
       <div id="outer-albums-list">
-        <img src="/assets/images/thefoil.jpg">
+        <img id ="the-foil-img" src="/assets/images/thefoil.jpg">
         <div class="albums-list" id="discog-albums-list">
           <div id="discog-header">Discography</div>
-          <ul id="the-foil-embed-ul">
-            <li id="the-foil-embed"><iframe src="https://bandcamp.com/EmbeddedPlayer/album=663933945/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://youfolk.bandcamp.com/album/the-foil">The Foil by You Folk</a></iframe></li>
-          </ul>
+          <div id="the-foil-embed-container">
+            <div id="the-foil-embed"><iframe id="the-foil-iframe" src="https://bandcamp.com/EmbeddedPlayer/album=663933945/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://youfolk.bandcamp.com/album/the-foil">The Foil by You Folk</a></iframe></div>
+          </div>
         </div>
       </div>
 
@@ -25,7 +25,7 @@
           <ul class="related-albums">
 
         <% Album.all.each do | album | %>
-        <li><a href="<%= album.url %>"><img src="<%= album.image %>"></a>
+        <li id=><a href="<%= album.url %>"><img class="album-img" src="<%= album.image %>"></a>
         </li>
 
       <% end %>
