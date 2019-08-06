@@ -23,7 +23,6 @@ body {
   }
 }
 
-
 #nav-bar {
   width: 100%;
   height: 65px;
@@ -37,11 +36,9 @@ body {
   margin-top: 0px;
   margin-left: 0px;
   background-color: white;
-/*  border: 2px solid red;*/
   z-index: 10;
   opacity: 0.8;
-/*  flex-direction: row;*/
-  
+
 }
 
 #nav-bar-container {
@@ -54,7 +51,6 @@ body {
 @media only screen and (max-width: 909px) {
   .page-links { 
     display: none; }
-
 }
 
 #nav-overlay {
@@ -71,12 +67,13 @@ body {
   background-color: white;
 }
 
-
 #nav-overlay a {
   display: block;
 }
 
-.dropdown:hover #nav-overlay {display: block;}
+.dropdown:hover #nav-overlay {
+  display: block;
+}
 
 .page-links-overlay {
   color: white;
@@ -108,7 +105,6 @@ textarea {
   font-size: 16px;
   border: none;
   display: none;
-
 }
 
 @media only screen and (max-width: 909px) {
@@ -172,7 +168,6 @@ a:hover {
   font-size: 20px;
 }
 
-
 #social-nav-buttons {
   position: relative;
   margin-top: 20px;
@@ -217,7 +212,6 @@ a:link {
   position: relative;
   height: auto;
   width: 100%;
-/*  min-width: 500px;*/
 }
 
 .endearment {
@@ -296,9 +290,6 @@ a:link {
   color: black;
 }
 
-
-
-
 #new-heading-gigs {
   margin: auto;
   color: white;
@@ -314,8 +305,6 @@ a:link {
   text-align: center;
   padding-bottom: 30px;
 }
-
-
 
 #footer {
   margin: 0px;
