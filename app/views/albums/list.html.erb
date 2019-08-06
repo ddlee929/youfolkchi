@@ -1,9 +1,13 @@
 <html>
   <body>
     <%= stylesheet_link_tag    'albums' %>
-    <div class="back-to-admin"><a href="/pages/admin">Back to Admin Page</a></div>
+    <div class="back-to-admin"><a href="/pages/admin">Back to Admin Page</a></div><br>
+
+    <div class="new-album"><%= link_to 'New Album', new_album_path %></div>
 
     <div id="albums-holder">
+
+    
 
     <table id="albums-table">
         <thead id="album-headers"> 
@@ -22,6 +26,7 @@
            <td id="<%= 'albums-last-column' if @last_album_id == album.id %>" class="albums-image albums-column"><%= album.image %>
            </td>
            <td id="edit-and-delete-buttons" class="albums-column">
+          <div id="view-button"><%= button_to 'view', album_path(album), method: 'get' %></div>
           <div id="edit-button"><%= button_to 'edit', edit_album_path(album), method: 'get' %></div>
           <div id="delete-button"><%= button_to 'remove', album_path(album), method: 'delete', data: { confirm: 'are you sure?'} %></div>
           </td>

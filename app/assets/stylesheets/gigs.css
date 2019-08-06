@@ -140,6 +140,15 @@
   list-style-type: none;
 }
 
+@media only screen and (max-width: 400px) {
+  #view-button {
+  border: 1px solid black;
+  width: 12%;
+  margin: auto;
+  text-align: center;
+  }
+}
+
 #edit-button {
   color: black;
   width: 12%;
@@ -180,6 +189,40 @@
   opacity: 0.9;
   margin-top: 20px;
   display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+  .back-to-admin { 
+    font-size: 13px;
+    background-color: white;
+    color: white;
+    width: 115px;
+    opacity: 0.9;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+}
+
+.new-gig {
+  background-color: white;
+  color: white;
+  width: 70px;
+  opacity: 0.9;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+  .new-gig { 
+    font-size: 13px;
+    background-color: white;
+    color: white;
+    width: 55px;
+    opacity: 0.9;
+    margin-top: 6px;
+    display: inline-block;
+  }
 }
 
 #albums-holder {

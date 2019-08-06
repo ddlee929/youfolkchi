@@ -2,7 +2,9 @@
 <%= stylesheet_link_tag    'gigs' %>
 </head>
 
-<div class="back-to-admin"><a href="/pages/admin">Back to Admin Page</a></div>
+<div class="back-to-admin"><a href="/pages/admin">Back to Admin Page</a></div><br>
+
+<div class="new-gig"><%= link_to 'New Gig', new_gig_path %></div>
 
 <ul id="gigs-list">
 <% @gigs.each do | gig | %>
@@ -10,6 +12,7 @@
   <%= gig.date %>
   <%= gig.location %>
   <%= link_to gig.artists, gig_path(gig) %>
+  <div id="view-button"><%= button_to 'view', gig_path(gig), method: 'get' %></div>
   <div id="edit-button"><%= button_to 'edit', edit_gig_path(gig), method: 'get' %></div>
   <div id="delete-button"><%= button_to 'remove', gig_path(gig), method: 'delete', data: { confirm: 'are you sure?'} %></div>
 </li>

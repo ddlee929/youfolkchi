@@ -272,6 +272,16 @@ a:link {
   display: block;
 }
 
+@media only screen and (max-width: 400px) {
+  #myVideo {
+    width: 100%;
+    height: 280px;
+    object-fit: fill;
+    margin: 0;
+    display: block;
+  }
+}
+
 #myBtn {
   width: 200px;
   font-size: 18px;

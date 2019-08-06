@@ -43,13 +43,8 @@ class GigsController < ApplicationController
   def destroy
     executeIfAdmin {
     @gig = Gig.find(params[:id])
-
-    if @gig.destroy(gig_params)
-      redirect_to @gig, notice: 'Your show has been deleted'
-    else
-    # @gig.destroy
-      redirect_to gigs_path
-    end
+    @gig.destroy
+    redirect_to list_gigs_path
     }
   end
 

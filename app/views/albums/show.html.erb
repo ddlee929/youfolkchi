@@ -1,1 +1,24 @@
-<%= @album.inspect %>
+<%= stylesheet_link_tag    'albums' %>
+<br>
+<div id="create-albums">
+  <table id="albums-table">
+
+  <tr class="album-table-row-container">
+    <td class="album-table-headers">URL:</td>
+    <td class="album-table-row"><%= @album.url %></td>
+  </tr>
+  <tr class="album-table-row-container">
+    <td class="album-table-headers">Image:</td>
+    <td class="album-table-row"><%= @album.image %></td>
+  </tr>
+  <tr class="album-table-row-container">
+    <td class="album-table-headers">Name:</td>
+    <td class="album-table-row"><%= @album.name %></td>
+  </tr>
+  <tr>
+    <td><%= button_to 'edit', edit_album_path(@album), method: 'get' %>
+      <%= button_to 'remove', album_path(@album), method: 'delete', data: { confirm: 'are you sure?'} %></td>
+    <td></td>
+  </tr>
+  </table>
+</div>

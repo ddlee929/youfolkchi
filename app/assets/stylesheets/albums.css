@@ -136,6 +136,7 @@ iframe {
 }
 
 #the-foil-img {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 400px) {
@@ -170,7 +171,7 @@ iframe {
   top: 0;
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #outer-albums-list2 {
@@ -425,9 +426,44 @@ only screen and (max-width: 760px),
   color: white;
   width: 150px;
   opacity: 0.9;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+  .back-to-admin { 
+    font-size: 13px;
+    background-color: white;
+    color: white;
+    width: 115px;
+    opacity: 0.9;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+}
+
+.new-album {
+  background-color: white;
+  color: white;
+  width: 90px;
+  opacity: 0.9;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+  .new-album { 
+    font-size: 13px;
+    background-color: white;
+    color: white;
+    width: 70px;
+    opacity: 0.9;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
 }
 
 .albums-row {
@@ -540,6 +576,16 @@ only screen and (max-width: 760px),
 
 #edit-and-delete-buttons {
   color: black;
+}
+
+@media only screen and (max-width: 400px) {
+  #view-button {
+  border: 1px solid black;
+  width: 25%;
+  margin: auto;
+  margin-left: 0;
+  text-align: center;
+  }
 }
 
 @media only screen and (max-width: 400px) {

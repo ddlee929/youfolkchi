@@ -43,7 +43,7 @@ class AlbumsController < ApplicationController
     executeIfAdmin {
     @album = Album.find(params[:id])
     @album.destroy
-    redirect_to albums_path
+    redirect_to list_albums_path
     }
   end
 

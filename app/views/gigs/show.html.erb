@@ -1,1 +1,24 @@
-<%= @gig.inspect %>
+<%= stylesheet_link_tag    'gigs' %>
+<br>
+<div id="create-gigs">
+  <table id="gigs-table">
+
+  <tr>
+    <td class="gig-table-headers">Date:</td>
+    <td><%= @gig.date %></td>  
+  </tr>
+  <tr>
+    <td class="gig-table-headers">Location:</td>
+    <td><%= @gig.location %></td>
+  </tr>
+  <tr>
+    <td class="gig-table-headers">Artists:</td>
+    <td><%= @gig.artists %></td>
+  </tr>
+  <tr>
+  <td><%= button_to 'edit', edit_gig_path(@gig), method: 'get' %>
+  <%= button_to 'remove', gig_path(@gig), method: 'delete', data: { confirm: 'are you sure?'} %></td>
+  <td></td>
+  </tr>
+  </table>
+</div>
