@@ -58,6 +58,54 @@ iframe {
   list-style-type: none;
 }
 
+.album-table-row-container {
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .album-table-row-container { 
+    margin: auto;
+    border: 1px solid black;
+    padding: 2% 0;
+    position: relative;
+  }
+}
+
+.album-table-row {
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .album-table-row { 
+    margin: auto;
+    border: 1px solid black;
+    padding: 5% 0;
+    width: 70%;
+
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #album_url { 
+    width: 95%;
+
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #album_image { 
+    width: 95%;
+
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #album_name { 
+    width: 95%;
+
+  }
+}
+
 .albums-list ul li {
   list-style-type: none;
   position: relative;
@@ -218,7 +266,7 @@ iframe {
   margin: auto;
 }
 
-#create-albums {
+/*#create-albums {
   position: relative;
   height: 100%;
   padding: 20px;
@@ -226,7 +274,7 @@ iframe {
   margin: auto;
 
 }
-
+*/
 #save-button {
   width: 60px;
   height: 30px;
@@ -234,6 +282,7 @@ iframe {
 
 @media only screen and (max-width: 500px) {
   #save-button {
+      margin-top: 5%;
       width: 60px;
       height: 30px;
       border: 1px black solid;
@@ -330,7 +379,7 @@ only screen and (max-width: 760px),
 }
 
   .album-table-headers {
-    display: none;
+    float: left;
   }
   
   tr { 
@@ -338,8 +387,7 @@ only screen and (max-width: 760px),
   }
   
   td { 
-    /* Behave  like a "row" */
-/*    border: 1px solid blue;*/
+
     position: relative;
     padding-left: 30%; 
     font-size: 10px;
@@ -347,10 +395,8 @@ only screen and (max-width: 760px),
   }
   
   td:before { 
-    /* Now like a table header */
+    display: none;
     position: absolute;
-    /* Top/left values mimic padding */
-/*    border: 1px solid red;*/
     top: 6px;
     left: 6px;
     width: 45%; 
@@ -361,7 +407,7 @@ only screen and (max-width: 760px),
   
   /*
   Label the data
-  */
+  */ 
 
   td:nth-of-type(1):before { content: "Album Name"; }
   td:nth-of-type(2):before { content: "URL"; }
@@ -401,10 +447,19 @@ only screen and (max-width: 760px),
   border-bottom: 1px solid grey;*/
 }
 
-#albums-table {
+/*#albums-table {
   opacity: 0.9;
   border-collapse: collapse; 
   width: 100%;
+}*/
+
+@media only screen and (max-width: 400px) {
+  #albums-table { 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #album-artwork-header {
@@ -452,6 +507,15 @@ only screen and (max-width: 760px),
   border: 1px solid white;
 }
 
+@media only screen and (max-width: 400px) {
+  #create-albums{ 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .album-table-headers {
   font-size: 20px;
   text-align: right;
@@ -472,6 +536,30 @@ only screen and (max-width: 760px),
   font-size: 46px;
   text-align: center;
   padding-bottom: 30px;
+}
+
+#edit-and-delete-buttons {
+  color: black;
+}
+
+@media only screen and (max-width: 400px) {
+  #edit-button {
+  border: 1px solid black;
+  width: 25%;
+  margin: auto;
+  margin-left: 0;
+  text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #delete-button {
+  border: 1px solid black;
+  width: 25%;
+  margin: auto;
+  margin-left: 0;
+  text-align: center;
+  }
 }
 
 #save-button-albums {

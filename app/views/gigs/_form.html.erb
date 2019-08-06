@@ -2,17 +2,17 @@
   <table id="gigs-table">
 <%= form_for @gig do |f| %>
 
-  <tr>
+  <tr class="gig-table-row-container">
     <td class="gig-table-headers">Date:</td>
-    <td><%= f.date_field :date, id: 'gig-date-field' %></td>  
+    <td class="gig-table-row"><%= f.date_field :date, id: 'gig-date-field' %></td>  
   </tr>
-  <tr>
+  <tr class="gig-table-row-container">
     <td class="gig-table-headers">Location:</td>
-    <td><%= f.text_area :location %></td>
+    <td class="gig-table-row"><%= f.text_area :location %></td>
   </tr>
-  <tr>
+  <tr class="gig-table-row-container">
     <td class="gig-table-headers">Artists:</td>
-    <td><%= f.text_area :artists %></td>
+    <td class="gig-table-row"><%= f.text_area :artists %></td>
   </tr>
   <tr>
   <td><%= f.submit 'Save', id: 'save-button' %></td>

@@ -14,6 +14,7 @@ class AlbumsController < ApplicationController
   end
 
   def create
+    executeIfAdmin {
     @album = Album.new(album_params)
 
     if @album.save
@@ -21,24 +22,29 @@ class AlbumsController < ApplicationController
     else
       render :new
     end
+    }
   end
 
   def edit
   end
 
   def update
+    executeIfAdmin {
     @album = Album.find(params[:id])
     if @album.update(album_params)
       redirect_to @album, notice: 'Your album was created successfully'
     else
       render :edit
     end
+    }
   end
 
   def destroy
+    executeIfAdmin {
     @album = Album.find(params[:id])
     @album.destroy
     redirect_to albums_path
+    }
   end
 
   def show

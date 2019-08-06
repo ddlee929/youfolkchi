@@ -14,7 +14,7 @@
 
 #shows-table {
   margin: auto;
-  width: 100%;
+  width: 80%;
   color: black;
   background-color: white;
   opacity: 0.8;
@@ -101,6 +101,30 @@
   padding-right: 25px;
 }
 
+.gig-table-row-container {
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .gig-table-row-container { 
+    margin: auto;
+    border: 1px solid black;
+    padding: 2% 0;
+  }
+}
+
+.gig-table-row {
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .gig-table-row { 
+    margin: auto;
+    border: 1px solid black;
+    padding: 5% 0;
+  }
+}
+
 #gig-date {
 }
 
@@ -114,6 +138,28 @@
   margin-top: 20px;
   text-align: center;
   list-style-type: none;
+}
+
+#edit-button {
+  color: black;
+  width: 12%;
+  margin: auto;
+  }
+
+@media only screen and (max-width: 400px) {
+  #edit-button {
+  border: 1px solid black;
+  width: 12%;
+  margin: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #delete-button {
+  border: 1px solid black;
+  width: 15%;
+  margin: auto;
+}
 }
 
 @media only screen and (max-width: 400px) {
@@ -188,3 +234,4 @@
     typing 3.5s steps(30, end),
     blinking-cursor .5s step-end infinite;
 }
+

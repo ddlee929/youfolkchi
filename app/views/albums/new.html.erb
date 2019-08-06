@@ -12,17 +12,17 @@
   <table id="albums-table">
   <%= form_for @album do |f| %>
 
-  <tr>
+  <tr class="album-table-row-container">
     <td class="album-table-headers">URL:</td>
-    <td><%= f.text_area :url %></td>
+    <td class="album-table-row"><%= f.text_area :url %></td>
   </tr>
-  <tr>
+  <tr class="album-table-row-container">
     <td class="album-table-headers">Image:</td>
-    <td><%= f.text_area :image %></td>
+    <td class="album-table-row"><%= f.text_area :image %></td>
   </tr>
-  <tr>
+  <tr class="album-table-row-container">
     <td class="album-table-headers">Name:</td>
-    <td><%= f.text_area :name %></td>
+    <td class="album-table-row"><%= f.text_area :name %></td>
   </tr>
   <tr>
     <td><%= f.submit 'Save', id: 'save-button' %></td>

@@ -15,31 +15,42 @@ class GigsController < ApplicationController
   end
 
   def create
-    @gig = Gig.new(gig_params)
+    executeIfAdmin {
+      @gig = Gig.new(gig_params)
 
-    if @gig.save
-      redirect_to @gig, notice: 'Show has been posted'
-    else
-      render :new
-    end
+      if @gig.save
+          redirect_to @gig, notice: 'Show has been posted'
+      else
+        render :new
+      end
+     }
   end
 
   def edit
   end
 
   def update
+    executeIfAdmin {
     @gig = Gig.find(params[:id])
     if @gig.update(gig_params)
       redirect_to @gig, notice: 'Your show was updated successfully'
     else
       render :edit
     end
+    }
   end
 
   def destroy
+    executeIfAdmin {
     @gig = Gig.find(params[:id])
-    @gig.destroy
-    redirect_to gigs_path
+
+    if @gig.destroy(gig_params)
+      redirect_to @gig, notice: 'Your show has been deleted'
+    else
+    # @gig.destroy
+      redirect_to gigs_path
+    end
+    }
   end
 
   def show
