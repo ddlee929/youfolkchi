@@ -16,9 +16,9 @@
       <table id="shows-table">
       <% Gig.all.sort_by{|g| g.date}.each do | gig | %>
         <tr class="shows-row">
-        <td id="<%= 'shows-last-column' if @last_gig_id == gig.id %>" class="shows-date shows-column"><%= gig.date %></td>
-        <td id="<%= 'shows-last-column' if @last_gig_id == gig.id %>" class="shows-artists shows-column"><%= gig.artists %></td>
-        <td id="<%= 'shows-last-column' if @last_gig_id == gig.id %>" class="shows-location shows-column"><%= gig.location %></td>
+        <td id="<%= 'shows-last-column' if @last_gig_id == gig %>" class="shows-date shows-column"><%= gig.date %></td>
+        <td id="<%= 'shows-last-column' if @last_gig_id == gig %>" class="shows-artists shows-column"><%= gig.artists %></td>
+        <td id="<%= 'shows-last-column' if @last_gig_id == gig %>" class="shows-location shows-column"><%= gig.location %></td>
 
         
         </tr>
