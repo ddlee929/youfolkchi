@@ -6,7 +6,7 @@ body {
     width: 100%;
     margin: 0; 
     padding: 0;
-    background: url(<%= asset_path 'band.jpg' %>) no-repeat center center fixed;
+    background: url(/assets/band-13a7ef6daae6130c215ac615033272d65069a471f91beef1ed276117cdeb3d46.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Crimson Text', serif;
 }
@@ -17,7 +17,7 @@ body {
     width: 100%;
     margin: 0; 
     padding: 0;
-    background: url(<%= asset_path 'band2.jpg' %>) no-repeat center center fixed;
+    background: url(/assets/band2-6431fe92491608b24dfbdd22ec71f8441ef7e30e49e86502c9415b754b7d56dc.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Crimson Text', serif;
   }
@@ -99,7 +99,7 @@ textarea {
 
 .dropbtn {
   background-color: black;
-  background: url(<%= asset_path 'threelines2.png' %>) no-repeat center center fixed;
+  background: url(/assets/threelines2-2551a6c74bed446ba41fa64c10e245e55f87d15e1840423ed91a9dde7c337496.png) no-repeat center center fixed;
   color: black;
   padding: 16px;
   font-size: 16px;
