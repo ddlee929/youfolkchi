@@ -12,6 +12,7 @@ class GigsController < ApplicationController
   end
 
   def new
+    puts "Running new action for gig"
     @gig = Gig.new
   end
 
@@ -20,7 +21,7 @@ class GigsController < ApplicationController
       @gig = Gig.new(gig_params)
 
       if @gig.save!
-          redirect_to @gig, notice: 'Show has been posted'
+        redirect_to @gig, notice: 'Show has been posted'
       else
         puts "failure"
         puts @gig.errors.full_messages

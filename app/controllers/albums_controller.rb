@@ -10,6 +10,7 @@ class AlbumsController < ApplicationController
   end
 
   def new
+    puts "Running new action for album"
     @album = Album.new
   end
 
