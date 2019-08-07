@@ -31,7 +31,7 @@
       <div id="second-section">
         <div class="endearment">
           <video autoplay muted loop controls id="myVideo">
-          <source src="/assets/videos/endearment.mp4" type="video/mp4">
+          <source src="<%= asset_path 'endearment.mp4' %>" type="video/mp4">
           <button id="myBtn" onclick="myFunction()">Pause</button>
           </video>
         </div>
@@ -40,13 +40,13 @@
       <div id="third-section">
         <div class="carousel-container">
           <div class="carousel-slide">
-            <div class="slides" id="double" style="background-image:url('/assets/images/double.jpg');" alt="double"></div>
-            <div class="slides" id="me" style="background-image:url('/assets/images/me.jpg');" alt="me"></div>
-            <div class="slides" id="rebecca" style="background-image:url('/assets/images/rebecca.jpg');" alt="rebecca"></div>
-            <div class="slides" id="bryan" style="background-image:url('/assets/images/bryan.jpg');" alt="bryan"></div>
-            <div class="slides" id="evan" style="background-image:url('/assets/images/evan.jpg');" alt="evan"></div>
-            <div class="slides" id="band-together" style="background-image:url('/assets/images/liveband.jpg');" alt="band together"></div>
-            <div class="slides" id="band-together-2" style="background-image:url('/assets/images/liveband2.jpg');" alt="band together 2"></div>
+            <div class="slides" id="double" style="background-image:url(<%= asset_path 'double.jpg'%>);" alt="double"></div>
+            <div class="slides" id="me" style="background-image:url(<%= asset_path 'me.jpg'%>);" alt="me"></div>
+            <div class="slides" id="rebecca" style="background-image:url(<%= asset_path '/rebecca.jpg'%>);" alt="rebecca"></div>
+            <div class="slides" id="bryan" style="background-image:url(<%= asset_path 'bryan.jpg'%>);" alt="bryan"></div>
+            <div class="slides" id="evan" style="background-image:url(<%= asset_path 'evan.jpg'%>);" alt="evan"></div>
+            <div class="slides" id="band-together" style="background-image:url(<%= asset_path 'liveband.jpg'%>);" alt="band together"></div>
+            <div class="slides" id="band-together-2" style="background-image:url(<%= asset_path 'liveband2.jpg'%>);" alt="band together 2"></div>
           </div>
         </div>
       </div>

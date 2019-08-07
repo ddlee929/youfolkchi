@@ -1,0 +1,347 @@
+html {
+}
+
+body {
+    background-color: #ffffff; 
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    background: url("images/band.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Crimson Text', serif;
+}
+
+@media only screen and (max-width: 601px) {
+  body {
+    background-color: #ffffff; 
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    background: url("images/band2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Crimson Text', serif;
+  }
+}
+
+#nav-bar {
+  width: 100%;
+  height: 65px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: white;
+  z-index: 10;
+  opacity: 0.8;
+
+}
+
+#nav-bar-container {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 909px) {
+  .page-links { 
+    display: none; }
+}
+
+#nav-overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 108px;
+  z-index: 10;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 65px;
+  background-color: white;
+}
+
+#nav-overlay a {
+  display: block;
+}
+
+.dropdown:hover #nav-overlay {
+  display: block;
+}
+
+.page-links-overlay {
+  color: white;
+  z-index: 11;
+}
+
+.page-links-overlay a {
+  color: black;
+}
+
+.social-media-overlay {
+  z-index: 11;
+}
+
+textarea {
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: black;
+  background: url("images/threelines2.png") no-repeat center center fixed;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  display: none;
+}
+
+@media only screen and (max-width: 909px) {
+  .dropbtn {
+    position: fixed;
+    display: inline;
+    top: 0;
+    left: 0;
+  }
+}
+
+.three-lines {
+  margin-top: 8px;
+  height: 18px;
+  width: 18px;
+}
+
+#container {
+  display: block;
+  margin-top: 65px;
+  min-height: calc(100vh - 125px);
+  width: 100%;
+}
+
+.logo {
+  width: 140px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 8px;
+  color: black;
+  display: inline-block;
+  padding-right: 50px;
+}
+
+#pages {
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: 15px;
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 0;
+  color: black;
+  float: left;
+  display: inline-block;
+}
+
+a {
+  color: black;
+}
+
+a:hover { 
+  color: grey;
+}
+
+.page-links {
+  float: left;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#social-nav-buttons {
+  position: relative;
+  margin-top: 20px;
+  width: 200px;
+  margin-right: 50px;
+  top: 0;
+  display: block;
+  float: right;
+}
+
+@media only screen and (max-width: 909px) {
+  #social-nav-buttons {
+    display: none;
+  }
+}
+
+.social-media {
+    margin-right: 20px;
+    float: right;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.sm-buttons {
+  width: 18px;
+  height: 18px;
+}
+
+.live-shots {
+  width: auto;
+  height: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#second-section {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.endearment {
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#third-section {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-color: black;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.slides {
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 887px;
+  flex-shrink: 0;
+}
+
+#myVideo {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  margin: 0;
+  display: block;
+}
+
+@media only screen and (max-width: 400px) {
+  #myVideo {
+    width: 100%;
+    height: 280px;
+    object-fit: fill;
+    margin: 0;
+    display: block;
+  }
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#new-heading-gigs {
+  margin: auto;
+  color: white;
+  font-size: 46px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#edit-heading-gigs {
+  margin: auto;
+  color: white;
+  font-size: 46px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#footer {
+  margin: 0px;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.typewriter {
+  position: relative;
+}
+
+.typewriter h1 {
+  color: white;
+  font-family: monospace; 
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
