@@ -25,7 +25,7 @@
           <ul class="related-albums">
 
         <% Album.all.each do | album | %>
-        <li id=><a href="<%= album.url %>"><img class="album-img" src="<%= album.image %>"></a>
+        <li id=><a href="<%= album.url %>"><img class="album-img" src="<%= asset_path album.image %>"></a>
         </li>
 
       <% end %>
