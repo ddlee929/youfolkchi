@@ -10,7 +10,7 @@
 
 <div id="create-albums">
   <table id="albums-table">
-  <%= form_for @album do |f| %>
+  <%= form_for @album, url: {action: "create"} do |f| %>
 
   <tr class="album-table-row-container">
     <td class="album-table-headers">URL:</td>

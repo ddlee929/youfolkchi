@@ -19,9 +19,11 @@ class GigsController < ApplicationController
     executeIfAdmin {
       @gig = Gig.new(gig_params)
 
-      if @gig.save
+      if @gig.save!
           redirect_to @gig, notice: 'Show has been posted'
       else
+        puts "failure"
+        puts @gig.errors.full_messages
         render :new
       end
      }

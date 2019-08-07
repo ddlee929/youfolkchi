@@ -8,7 +8,7 @@
 
 <div id="create-gigs">
   <table id="gigs-table">
-<%= form_for @gig do |f| %>
+<%= form_for @gig, url: {action: "create"} do |f| %>
 
   <tr>
     <td class="gig-table-headers">Date:</td>

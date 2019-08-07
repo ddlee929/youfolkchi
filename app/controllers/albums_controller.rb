@@ -17,9 +17,11 @@ class AlbumsController < ApplicationController
     executeIfAdmin {
     @album = Album.new(album_params)
 
-    if @album.save
+    if @album.save!
       redirect_to @album, notice: 'Album has been posted'
     else
+      puts "failure"
+      puts @album.errors.full_messages
       render :new
     end
     }
