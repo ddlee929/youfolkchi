@@ -211,7 +211,7 @@ iframe {
 }
 
 #related-albums-list {
-  background: url("images/blue.jpg") no-repeat center center fixed;
+  background: url(<%= asset_path 'blue.jpg' %>) no-repeat center center fixed;
   margin-top: 20px;
   padding-bottom: 100px;
   height: auto;
@@ -219,7 +219,7 @@ iframe {
 
 @media only screen and (max-width: 400px) {
   #related-albums-list { 
-    background: url("images/blue.jpg") no-repeat center center fixed;
+    background: url(<%= asset_path 'blue.jpg' %>) no-repeat center center fixed;
     padding-bottom: 100px;
     height: auto;
     margin: auto;

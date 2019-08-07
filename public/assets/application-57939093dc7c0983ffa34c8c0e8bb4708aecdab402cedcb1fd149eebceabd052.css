@@ -6,7 +6,7 @@ body {
     width: 100%;
     margin: 0; 
     padding: 0;
-    background: url("images/band.jpg") no-repeat center center fixed;
+    background: url(<%= asset_path 'band.jpg' %>) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Crimson Text', serif;
 }
@@ -17,7 +17,7 @@ body {
     width: 100%;
     margin: 0; 
     padding: 0;
-    background: url("images/band2.jpg") no-repeat center center fixed;
+    background: url(<%= asset_path 'band2.jpg' %>) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Crimson Text', serif;
   }
@@ -99,7 +99,7 @@ textarea {
 
 .dropbtn {
   background-color: black;
-  background: url("images/threelines2.png") no-repeat center center fixed;
+  background: url(<%= asset_path 'threelines2.png' %>) no-repeat center center fixed;
   color: black;
   padding: 16px;
   font-size: 16px;
