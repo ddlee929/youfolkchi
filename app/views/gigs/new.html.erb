@@ -7,25 +7,11 @@
 <div id="new-heading-gigs">Create New Shows</div>
 
 <div id="create-gigs">
-  <table id="gigs-table">
-<%= form_for @gig do |f| %>
-
-  <tr>
-    <td class="gig-table-headers">Date:</td>
-    <td><%= f.date_field :date, id: 'gig-date-field' %></td>  
-  </tr>
-  <tr>
-    <td class="gig-table-headers">Location:</td>
-    <td><%= f.text_area :location %></td>
-  </tr>
-  <tr>
-    <td class="gig-table-headers">Artists:</td>
-    <td><%= f.text_area :artists %></td>
-  </tr>
-  <tr>
-  <td><%= submit_tag "Save", id: 'save-button' %></td>
-  <td></td>
-  </tr>
-<% end %>
-  </table>
+  <%= form_for @gig do |f| %>
+    <div class="gig-col">Date:</div><%= f.date_field :date, id: 'gig-date-field' %><br />
+    <div class="gig-col">Location:</div><%= f.text_area :location %><br />
+    <div class="gig-col">Artists:</div><%= f.text_area :artists %><br />
+    <%= f.submit "Create" %>
+  <% end %>
 </div>
+<br />

@@ -9,25 +9,11 @@
 <div id="new-heading-albums">Create New Album</div>
 
 <div id="create-albums">
-  <table id="albums-table">
   <%= form_for @album do |f| %>
-
-  <tr class="album-table-row-container">
-    <td class="album-table-headers">URL:</td>
-    <td class="album-table-row"><%= f.text_area :url %></td>
-  </tr>
-  <tr class="album-table-row-container">
-    <td class="album-table-headers">Image:</td>
-    <td class="album-table-row"><%= f.text_area :image %></td>
-  </tr>
-  <tr class="album-table-row-container">
-    <td class="album-table-headers">Name:</td>
-    <td class="album-table-row"><%= f.text_area :name %></td>
-  </tr>
-  <tr>
-    <td><%= submit_tag "Save", id: 'save-button' %></td>
-    <td></td>
-  </tr>
+    <div class="album-col">URL:</div> <%= f.text_area :url %><br />
+    <div class="album-col">Image:</div> <%= f.text_area :image %><br />
+    <div class="album-col">Name:</div> <%= f.text_area :name %><br />
+    <%= f.submit "Create" %>
   <% end %>
-  </table>
 </div>
+<br />
