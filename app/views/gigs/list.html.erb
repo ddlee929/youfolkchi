@@ -6,15 +6,31 @@
 
 <div class="new-gig"><%= link_to 'New Gig', new_gig_path %></div>
 
-<ul id="gigs-list">
-<% @gigs.each do | gig | %>
-<li>
-  <%= gig.date %>
-  <%= gig.location %>
-  <%= link_to gig.artists, gig_path(gig) %>
-  <div id="view-button"><%= button_to 'view', gig_path(gig), method: 'get' %></div>
-  <div id="edit-button"><%= button_to 'edit', edit_gig_path(gig), method: 'get' %></div>
-  <div id="delete-button"><%= button_to 'remove', gig_path(gig), method: 'delete', data: { confirm: 'are you sure?'} %></div>
-</li>
-<% end %>
-</ul>
+<div id="gigs-holder">
+  <table id="gigs-table">
+    <thead id="gigs-headers">
+      <tr>
+        <th id="gigs-date-header">Date</th>
+        <th id="gigs-location-header">Location</th>
+        <th id="gigs-artists-header">Artists</th>
+        <th id="gigs-buttons"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @gigs.each do | gig | %>
+      <tr class="gigs-row">
+        <td id="<%= 'gigs-last-column' if @last_gig_id == gig.id %>" class="gigs-date gigs-column"><%= gig.date %>
+        </td>
+        <td id="<%= 'gigs-last-column' if @last_gig_id == gig.id %>" class="gigs-location gigs-column"><%= gig.location %></td>
+        <td id="<%= 'gigs-last-column' if @last_gig_id == gig.id %>" class="gigs-artists gigs-column"><%= gig.artists %>
+        </td>
+        <td id="edit-and-delete-buttons" class="gigs-column">
+          <div id="view-button"><%= button_to 'view', gig_path(gig), method: 'get' %></div>
+          <div id="edit-button"><%= button_to 'edit', edit_gig_path(gig), method: 'get' %></div>
+          <div id="delete-button"><%= button_to 'remove', gig_path(gig), method: 'delete', data: { confirm: 'are you sure?'} %></div>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
